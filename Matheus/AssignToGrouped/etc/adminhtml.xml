@@ -19,9 +19,10 @@
             <children>
                 <catalog module="matheus_assigntogrouped" translate="title">
                     <children>
-                        <set_time translate="title">
+			<matheus_assigntogrouped module="matheus_assigntogrouped" translate="title">
                             <title>Assign To Grouped</title>
-                        </set_time>
+			    <sort_order>30</sort_order>
+                        </matheus_assigntogrouped>
                     </children>
                 </catalog>  
             </children>

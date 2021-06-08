@@ -12,7 +12,7 @@ class Matheus_AssignToGrouped_IndexController extends Mage_Adminhtml_Controller_
 		  <input type='file' name='file_to_upload' id='file_to_upload'>
 		  <br><br>
 		  <input type='hidden' name='form_key' value='$urlValue'>
-		  <input type='submit' class='btn-export' value='Import' name='import'>
+		  <input type='submit' class='btn-export' value='Start' name='import'>
 		</form>
 		<style type='text/css'>
 		.btn-export{
