@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+          <Matheus_AssignToGrouped>
+          <version>0.1.0</version>
+          </Matheus_AssignToGrouped>
+</modules>
+  
+<global>
+          <helpers>
+              <matheus_assigntogrouped>
+                  <class>Matheus_AssignToGrouped_Helper</class>
+              </matheus_assigntogrouped>
+          </helpers>
+          <blocks>
+              <matheus_assigntogrouped>
+                  <class>Matheus_AssignToGrouped_Block</class>
+              </matheus_assigntogrouped>
+          </blocks>
+</global>
+  
+<admin>
+          <routers>
+              <assigntogrouped_admin>
+              <use>admin</use>
+                  <args>
+                      <module>Matheus_AssignToGrouped</module>
+                      <frontName>assign_grouped</frontName>
+                  </args>
+              </assigntogrouped_admin>
+          </routers>
+</admin>
+  
+</config>
+            
