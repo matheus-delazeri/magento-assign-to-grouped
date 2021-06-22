@@ -10,6 +10,7 @@ class Matheus_AssignToGrouped_StartController extends Mage_Adminhtml_Controller_
                   $excelFileType = strtolower(pathinfo($sheetName,PATHINFO_EXTENSION));
 		  /** Material Icons */
                   echo "<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>";
+		  echo "<pre>";
                   $this->error_icon = "<i class='material-icons' style='font-size:22px;color:red;vertical-align: bottom;'>error_outline</i>";
                   $this->done_icon = "<i class='material-icons' style='font-size:22px;color:green;vertical-align: bottom;'>done</i>";
                   $this->loading_icon = "<i class='material-icons' style='font-size:22px;vertical-align: bottom;'>schedule</i>";
@@ -47,7 +48,7 @@ class Matheus_AssignToGrouped_StartController extends Mage_Adminhtml_Controller_
 				  $errorIndex += 1; 
 			  }
 		  }
-		  echo "<p>".$this->done_icon."<b> ".date('H:i:s')." </b> Products assigned. <b>".$successIndex."</b> products were assigned to their categories.</p>";
+		  echo "<p>".$this->done_icon."<b> ".date('H:i:s')." </b>Products assigned. <b>".$successIndex."</b> products were assigned to their categories.</p>";
 		  if($errorIndex != 0){
 			  $errorString = "{";
 			  foreach($errorLines as $line){
